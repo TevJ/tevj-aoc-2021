@@ -5,7 +5,11 @@ import kotlin.math.abs
 fun main() {
     fun part1(input: List<String>) {
         val crabPositions = parseInput(input)
-        fun getCheapestCrabAlignment(crabPositions: List<Int>, calculatedCosts: List<Int>,  remainingCosts: List<Int>): Int {
+        fun getCheapestCrabAlignment(
+            crabPositions: List<Int>,
+            calculatedCosts: List<Int>,
+            remainingCosts: List<Int>
+        ): Int {
             if (remainingCosts.isEmpty()) return calculatedCosts.minOrNull() ?: 0
             val currentPosition = calculatedCosts.size
             val cost = crabPositions.sumOf {
@@ -18,7 +22,11 @@ fun main() {
 
     fun part2(input: List<String>) {
         val crabPositions = parseInput(input)
-        fun getCheapestCrabAlignment(crabPositions: List<Int>, calculatedCosts: List<Int>,  remainingCosts: List<Int>): Int {
+        fun getCheapestCrabAlignment(
+            crabPositions: List<Int>,
+            calculatedCosts: List<Int>,
+            remainingCosts: List<Int>
+        ): Int {
             if (remainingCosts.isEmpty()) return calculatedCosts.minOrNull() ?: 0
             val currentPosition = calculatedCosts.size
             val cost = crabPositions.sumOf {
